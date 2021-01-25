@@ -78,6 +78,7 @@ lazy val codeGen = projectMatrix
     buildInfoPackage := "scalapb.validate.compiler",
     name := "scalapb-validate-codegen",
     libraryDependencies ++= Seq(
+      "com.thesamet.scalapb" %% "protoc-bridge" % "0.9.1+1-aeed8787-SNAPSHOT",
       "com.thesamet.scalapb" %% "compilerplugin" % scalapbVersion,
       "com.thesamet.scalapb" %% "scalapb-runtime" % scalapbVersion,
       "com.thesamet.scalapb" %% "scalapb-runtime" % scalapbVersion % "protobuf",

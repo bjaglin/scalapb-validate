@@ -16,6 +16,13 @@ object gen {
           "scalapb-validate-codegen_2.12",
           scalapb.validate.compiler.BuildInfo.version
         ),
+        Seq(
+          Artifact(
+            "com.thesamet.scalapb",
+            "compilerplugin",
+            scalapb.compiler.Version.scalapbVersion
+          )
+        ),
         "scalapb.validate.compiler.CodeGenerator$",
         scalapb.validate.compiler.CodeGenerator.suggestedDependencies
       ),
